@@ -1,0 +1,171 @@
+html
+{
+	background-color: #32322c;
+}
+
+
+body
+{
+font-family: Arial;
+font-size: 16pt;
+background-color: #32322c;
+
+}
+
+h1
+{
+	text-align: center;
+	background-color: #32322c;
+}
+
+header
+{
+	background-color: #32322c;
+	color: white;
+}
+
+button
+{
+	padding: 0.7em 0.7em;
+	border-radius: 0.5em;
+	background-color: white;
+	border-color: #39a0ed;
+	border-style: solid;
+	color: #39a0ed;
+	font-size: 1em;
+}
+
+button:hover
+{
+		background-color: #39a0ed;
+		color: white;
+}
+
+input
+{
+	background-color: #32322c;
+	border: none;
+	border-bottom: 2px solid #39a0ed;
+	color: white;
+	text-size: 1em;
+}
+
+/*_________Add Appointment dialogue_________*/
+
+#appointmentDate
+{
+		background-color: white;	
+		color: white;
+		
+	
+}
+
+#appointmentDuration
+{
+		background-color: white;
+		color: black;
+	
+}
+
+#appointmentDescription
+{
+		background-color: white;
+			color: black;
+	
+}
+
+#appointmentOwner
+{
+		background-color: white;
+				color: black;
+		
+		margin: 0.5em 0em;
+		
+}
+
+
+/*______________Update Dialogue__________________*/
+#appointmentDateUpdate
+{
+		background-color: white;
+				color: black;
+		
+	
+}
+
+#appointmentDurationUpdate
+{
+		background-color: white;
+				color: black;
+		
+	
+}
+
+#appointmentDescriptionUpdate
+{
+		background-color: white;
+				color: black;
+		
+	
+}
+
+#appointmentOwnerUpdate
+{
+		background-color: white;
+				color: black;
+		
+		margin: 0.5em 0em;
+	
+}
+
+
+#tableResults
+{
+	padding-top: 3em;
+	align: center;
+	color: white;
+}
+
+#appointmentsList
+{
+	align: center;
+	border-spacing: 1.5em;
+}
+
+#appointmentDetailsAdd
+{
+text-align: center;
+}
+
+#appointmentDetailsUpdate
+{
+text-align: center;	
+}
+
+#appointmentDetailsAdd section
+{
+}
+
+#functionButtons
+{
+	text-align: center;
+}
+
+.searchAppointment
+{
+	text-align: center;
+	color: white;
+	font-size: 1em;
+}
+
+.selected
+{
+color: #39a0ed;
+font-weight: bold;
+
+}
+
+img
+{
+vertical-align: middle;
+}

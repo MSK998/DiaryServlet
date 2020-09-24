@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Appointments</title>
+		<!-- *** Load the jQuery and jQueryUI libraries here. *** -->		
+	  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+		<!-- *** Load jQueryUI default CSS from Google CDN. *** -->
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" />
+
+		<!-- Load local CSS and JavaScript. -->
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script src="script/index.js"></script> 
+	</head>
+	<body>
+		<header>
+			<h1>Appointment Manager</h1>
+		</header>
+		<section>
+		<!-- The search input boxes and search button -->
+				<div class = "searchAppointment">
+					Start Date:
+					<input type = "text" id = "startDate">
+					End Date:
+					<input type = "text" id = "endDate">
+					Owner:
+					<input type = "text" id = "searchOwner">
+					<button id = "searchAppointments">Search</button>
+				</div>
+				<!-- The buttons that call the main functions -->
+				<div id = "functionButtons">
+				<button id = "addAppointment">Add Appointment</button>
+				<button id = "deleteAppointment">Delete Appointment</button>
+				<button id = "updateAppointment">Update Appointment</button>
+				</div>
+				
+				<!-- This is where the table will get appended to in the JavaScript -->				
+				<div id = "tableResults"; align = "center">
+					<table id = "appointmentsList">
+					</table>
+				</div>
+				<!-- The add dialog box -- hidden at load up -->
+				<section id = "appointmentDetailsAdd">
+					<section>
+						Date:<br>
+						<input type = "text" id = "appointmentDate"><br>
+						Duration:<br>
+						<input type = "text" id = "appointmentDuration"><br>
+						Description:<br>
+						<input type = "text" id = "appointmentDescription"><br>
+						Owner:<br>
+						<input type = "text" id = "appointmentOwner"><br>
+					</section>
+					
+					<section>
+					<button id = "saveAppointment">Save</button>
+					<button id = "cancelAppointment">Cancel</button>
+					</section>
+				</section>
+				<!-- This is the appointment update dialog box -- also hidden on page load -->
+				<section id = "appointmentDetailsUpdate">
+					<section>
+						Date:<br>
+						<input type = "text" id = "appointmentDateUpdate"><br>
+						Duration:<br>
+						<input type = "text" id = "appointmentDurationUpdate"><br>
+						Description:<br>
+						<input type = "text" id = "appointmentDescriptionUpdate"><br>
+						Owner:<br>
+						<input type = "text" id = "appointmentOwnerUpdate"><br>
+					</section>
+					
+					<section>
+					<button id = "saveAppointmentUpdate">Save</button>
+					<button id = "cancelAppointmentUpdate">Cancel</button>
+					</section>
+				</section>
+		</section>
+	</body>
+</html>

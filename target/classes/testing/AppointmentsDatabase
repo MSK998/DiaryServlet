@@ -1,0 +1,39 @@
+package diary.appointments.model;
+
+import java.util.*;
+
+public class AppointmentsDatabase {
+
+	private static AppointmentsDatabase instance = null;
+
+	private Map<UUID, Appointments> data;
+
+	private AppointmentsDatabase() {
+		this.data = new HashMap<UUID, Appointments>();
+	}
+
+	public static AppointmentsDatabase getInstance() {
+		if (AppointmentsDatabase.instance == null) {
+			AppointmentsDatabase.instance = new AppointmentsDatabase();
+		}
+
+		return AppointmentsDatabase.instance;
+	}
+
+	public void add(Appointments appointment) {
+		this.data.put(appointment.id, appointment);
+	}
+
+	public Appointments get(UUID id) {
+		return this.data.get(id);
+	}
+
+	public Iterable<Appointments> getAll() {
+		return this.data.values();
+	}
+
+	public void delete(UUID id) {
+		this.data.remove(id);
+	}
+
+}
